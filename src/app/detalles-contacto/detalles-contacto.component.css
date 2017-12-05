@@ -1,0 +1,10 @@
+button {
+    border: 1;
+    padding: 8;
+    margin: 0;
+    font-size: 48px;
+}
+
+buttom:hover {
+    color: #1eaedb
+}

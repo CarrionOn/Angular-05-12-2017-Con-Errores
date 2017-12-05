@@ -1,0 +1,26 @@
+
+<div class="row">
+  <div class="six colums">
+    <app-lisra-contactos 
+    [contactos]="contactos$ | async"
+    (contactoseleccionado)="verDetalles($event)"
+    (botonElimnarPulsado)="eliminarContacto($event)">
+    </app-lisra-contactos>  
+  </div>
+  <div class="six colums">
+    <app-detalles-contacto 
+    [contacto]="contactoseleccionado"
+    (botonFacebookPulsado)="verPerfil($event)"
+    (botonTwitterPulsado)="verPerfil($event)"
+    >
+      
+    </app-detalles-contacto>
+  </div>
+</div>
+
+<!-- Para evaluar el valor de un atributo previamente a su
+  asiganción, debemos poner entre corchetes el nombre del
+  atributo. Si queremos recoger los faros que vienen dados
+  en un evento, utilizamos la palabra reservada '$event'.-->
+ 
+  

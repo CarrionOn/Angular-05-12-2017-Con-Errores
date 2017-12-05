@@ -1,0 +1,16 @@
+<div *ngIf="contacto">
+    <h5>{{ contacto.nombre }} {{ contacto.apellidos }} </h5>
+    <hr>
+    <button
+        *nglf="contato.facebook"
+        (click)="notificarNavegacionFacebook()">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+    </button>
+    <button
+        *nglf="contato.twitter"
+        (click)="notificarNavegacionTwitter()">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    </button>
+    <hr>
+    {{ contacto.email }} | {{ contacto.movil }}
+</div>
